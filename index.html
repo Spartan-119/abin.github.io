@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type"
+		content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width,
+		minimum-scale=1,initial-scale=1">
+
+	<script src=
+		"https://code.jquery.com/jquery-3.3.1.min.js">
+	</script>
+
+	<script src=
+"https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js">
+	</script>
+
+	<link rel="stylesheet" href=
+"https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+
+	<style type="text/css">
+		.terminal,
+		span,
+		.cmd,
+		div {
+			--color: rgba(255, 255, 255, 255);
+		}
+
+		.terminal,
+		span {
+			--size: 1.4;
+		}
+	</style>
+</head>
+
+<body>
+	<script>
+		$('body').terminal({
+			education: function () {
+				this.echo("\nBachelor’s in Technology (Computer Science and Engineering)\t\t" +
+					'SRM Institute of Science and Technology\n' + "-> FIRST CLASS WITH DISTINCTION\n\n" + 
+					"Class 12\t" + "Father Agnel School\n" + "-> 83.8%\n\n" +
+					"Class 10\t" + "Father Agnel School\n" + "-> 9 CGPA\n");
+			},
+			volunteer_experience: function () {
+				this.echo("\n1. OpenMinded\n" + "    Working on Differential Privacy by contributing to the PyDP team. Currently focused on integrating Pandas Profiling to PyDP.\n\n" + 
+					"2. Speaker\n" + "    2.1. Gave a webinar as a returning alumnus to SRM on differential privacy and machine learning.\n    2.2. Was the host and panel speaker of IEEE SIESGST, on Machine Intelligence and its industry aspects.\n" + 
+					"    2.3. Create(s) YouTube videos to lower the barrier to entry into Data Structures, Algorithms,\n         Data Science, Machine Learning, and Privacy-Enhancing Technologies\n");
+			},
+			skills: function () {
+				this.echo('\n1. Python - Expert\n'
+				+ '2. Data Science - Expert\n'
+				+ '3. Classical Machine Learning - Proficient\n'
+				+ '4. MySQL - Proficient\n'
+				+ '5. Java - Have used before\n');
+			},
+
+			work_experience: function () {this.echo(
+				"\n1. Associate - Data Science & Machine Learning Track - Infosys (01/2021 - Present):\n" + 
+				"    1.1. Led a team to develop an enterprise solution to extract skills from resumes,\n         and classify them into 5 job proficiency categories using Attention model.\n" + 
+				"    1.2. Worked on internal ML projects in the Data Science & Machine Learning track\n" + 
+				"    1.3. Made courses on classical Machine Learning, Deep Learning, GPT-3, Machine Translation,\n         and delivered sessions on other advanced mathematical courses like, but not limited to, Regression Analysis,\n         Probability Distribution using Python, Time Series Analysis, EDA, Convolutional Neural Network, Recurrent Neural Networks etc.\n" + 
+				"    1.4. Responsible for training internal employees, and global external clients.\n\n" + 
+				"2. Internship - Infosys (10/2020 - 12/2020):\n" + 
+				"    Got Trained in IVS-DWT stream. Worked on UNIX,PLSQL,\n    Python Programming language, Machine Learning fundamentals, Big Data, BI Testing, and\n    extensively worked on ETL using Informatica.\n")
+			},
+			projects: function () {
+				this.echo('\n1. Skills Extractor from Resumes using Attention Model:\n' + 
+					"    Developed an end-to-end solution to extract skills from resumes,\n    and classify them into 5 Job Proficiencies to be used by Infosys at a global level.\n\n"
+				+ '2. Fake News Classifier:\n' + "    Built a simple fake news classifier using LSTM architecture.\n\n"
+				+ '3. Movie Recommendation Engine:\n' + "    Built a recommendation engine that recommend movies in the descending order of\n    user's likeliness to watch, based on user's already watched movie.\n\n"
+				+ '4. Flight Ticket Price Predictor:\n' + "    Built a machine learning model to predict the flight ticket price by using\n    Exploratory Data Analysis, and data visualization.\n\n"
+				+ '5. Self learning Pong game:\n' + "    Built a Pong game and used data science to make it learn the player’s move,\n    so that it can play like the player.\n\n"
+				+ '6. Conway’s game of life:\n' + "    Implemented John Conway’s game of life in Python.\n")
+			}
+
+		}, {
+			greetings: "Welcome human! This is Abin's resume.\n"
+				+  "\nType: 'work_experience' to view the work experience."
+				+  "\nType: 'skills' to view the skills."
+				+  "\nType: 'projects' to view the projects."
+				+  "\nType: 'volnteer_experience' to view the volunteer experience."
+				+  "\nType: 'education' to view the Education details.\n\n"
+		});
+	</script>
+</body>
+
+</html>
